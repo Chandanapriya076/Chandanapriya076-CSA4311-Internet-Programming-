@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage with Map and Hotspot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #map {
+            width: 100%;
+            height: 500px;
+            border: 2px solid #333;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+    </style>
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <!-- Include the JavaScript file -->
+    <script src="map.js" defer></script>
+</head>
+<body onload="initMap()">
+    <div class="container">
+        <h1>Interactive Map with Fixed Hotspot</h1>
+        <p>Click on the marker to view more information about the hotspot.</p>
+        <div id="map"></div>
+    </div>
+</body>
+</html>
